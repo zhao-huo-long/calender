@@ -30,7 +30,7 @@ jobs:
       - run: mv dist zhao-huo-long.github.io/calendar
       - run: |
           cd zhao-huo-long.github.io
-          git add .
+          git remote set-url origin https://${{secrets.PAT}}@github.com/zhao-huo-long/zhao-huo-long.github.io.git
           git commit -am "update calendar"
           git push
   
