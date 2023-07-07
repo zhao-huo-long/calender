@@ -24,6 +24,6 @@ jobs:
       - run: git submodule add https://github.com/zhao-huo-long/zhao-huo-long.github.io.git
       - run: mv dist zhao-huo-long.github.io/calendar
       - run: cd zhao-huo-long.github.io && ls -al && pwd
-      - run: git add . && git commit -am "update calendar" && git push      
+      - run: cd zhao-huo-long.github.io && git add . && git commit -am "update calendar" && git push      
 
   
