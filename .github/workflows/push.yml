@@ -21,11 +21,10 @@ jobs:
       - run: npm run build      
       - run: git config --global user.email "lijiuyi1995@outlook.com"
       - run: git config --global user.name "zhao-huo-long"
-      - run: ls && pwd
-      - run: cd .. 
+      - run: rm -r .git
       - run: git clone https://github.com/zhao-huo-long/zhao-huo-long.github.io.git
-      - run: ls && pwd
-      - run: mv calendar/dist zhao-huo-long.github.io/calendar
+      - run: ls -al && pwd
+      - run: mv dist zhao-huo-long.github.io/calendar
       - run: cd zhao-huo-long.github.io
       - run: git add . && git commit -m "update calendar" && git push      
 
