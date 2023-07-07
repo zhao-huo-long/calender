@@ -15,6 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
+          always-auth: true
           token: ${{secrets.PAT}}
 
       - uses: actions/setup-node@v3
